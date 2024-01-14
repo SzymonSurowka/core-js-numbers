@@ -54,8 +54,10 @@ getCircleCircumference(5);
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function getAverage(value1, value2) {
+  const sum = value1 + value2;
+  if (sum === Infinity) return Number.MAX_VALUE;
+  return sum / 2;
 }
 
 /**
