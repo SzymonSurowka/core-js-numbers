@@ -388,9 +388,11 @@ getSine(0);
  * 255, 16 => 'ff'
  * 2, 2    => '10'
  */
-function numberToStringInBase(/* number, base */) {
-  throw new Error('Not implemented');
+function numberToStringInBase(number, base) {
+  return number.toString(base);
 }
+
+numberToStringInBase(255, 16);
 
 /**
  * Returns a string representation of a number in exponential notation.
@@ -442,9 +444,10 @@ toFixed(12345, 2);
  * 12345, 7    => '12345.00'
  * 12.345, 4   => '12.35'
  */
-function toPrecision(/* number, precision */) {
-  throw new Error('Not implemented');
+function toPrecision(number, precision) {
+  return number.toPrecision(precision);
 }
+toPrecision(12345, 7);
 
 /**
  * Returns the primitive value of a Number object.
